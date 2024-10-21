@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5b67d7fb40.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contact us - Visbug Mobile App Development Agency</title>
+    <style>
+      .error-message {
+        color: red;
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
+      }
+      .error-border {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navBar">
+      <div class="secondaryNav">
+      <a href="/">
+        <div class="logo">
+          <h2>Visbug Mobile App Development Agency</h2>
+          <h5>Dallas TX</h5>
+        </div>
+      </a>
+      <ul id="menuItems">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="/portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="/faq.html">FAQ</a>
+        </li>
+        <li>
+          <a href="/contact-us.html">Contact Us</a>
+        </li>
+      </ul>
+      <div id="menu"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    </nav>
+
+    <section class="contact" id="contact">
+      <div class="contactHead">
+        <div class="secondaruContactContainer">
+          <h1>Contact Us</h1>
+          <p>Please get in touch with us by filling out the form below.</p>
+        </div>
+      </div>
+      <form id="contactForm">
+        <p>I'd love to hear from you!</p>
+        <div class="formSec">
+          <div class="name item">
+            <label for="name">Name <span style="color: red">*</span></label>
+            <input type="text" placeholder="eg. James" id="name" />
+            <div class="error-message" id="nameError"></div>
+          </div>
+          <div class="email item">
+            <label for="email">Email <span style="color: red">*</span></label>
+            <input type="email" placeholder="example@gmail.com" id="email" />
+            <div class="error-message" id="emailError"></div>
+          </div>
+          <div class="message item">
+            <label for="message"
+              >Message <span style="color: red">*</span></label
+            >
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Type message here..."
+            ></textarea>
+            <div class="error-message" id="messageError"></div>
+            <button type="button" onclick="validateForm()">Submit</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <div class="firstSection">
+        <div class="itemOne"></div>
+        <div class="itemTwo">
+          <img src="#" alt="logo" />
+          <h3>Newsletter</h3>
+          <p>Stay up to date by subscribing to our newsletter.</p>
+          <form action="">
+            <input type="email" placeholder="example@gmail.com" />
+            <button><i class="fa-regular fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="secondSection">
+        <p>Copyright &copy; 2024 · Visbug</p>
+        <a href="#contact"><button><i class="fa-solid fa-angle-up"></i></button></a>
+      </div>
+    </footer>
+
+    <script>
+      function validateForm() {
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const messageInput = document.getElementById("message");
+        const nameError = document.getElementById("nameError");
+        const emailError = document.getElementById("emailError");
+        const messageError = document.getElementById("messageError");
+
+        let isValid = true;
+
+        nameError.textContent = "";
+        emailError.textContent = "";
+        messageError.textContent = "";
+        nameInput.classList.remove("error-border");
+        emailInput.classList.remove("error-border");
+        messageInput.classList.remove("error-border");
+
+        if (nameInput.value.trim() === "") {
+          nameError.textContent = "Name is required.";
+          nameInput.classList.add("error-border");
+          nameInput.style.border = ".1rem solid red";
+          isValid = false;
+        } else {
+          nameInput.style.border = ".1rem solid #101010";
+        }
+
+        if (emailInput.value.trim() === "") {
+          emailError.textContent = "Email is required.";
+          emailInput.classList.add("error-border");
+          emailInput.style.border = ".1rem solid red";
+          isValid = false;
+        } else if (!isValidEmail(emailInput.value.trim())) {
+          emailError.textContent = "Invalid email format.";
+          emailInput.classList.add("error-border");
+          emailInput.style.border = ".1rem solid red";
+          isValid = false;
+        } else {
+          emailInput.style.border = ".1rem solid #101010";
+        }
+
+        if (messageInput.value.trim() === "") {
+          messageError.textContent = "Message is required.";
+          messageInput.classList.add("error-border");
+          messageInput.style.border = ".1rem solid red";
+          isValid = false;
+        } else {
+          messageInput.style.border = ".1rem solid #101010";
+        }
+
+        if (isValid) {
+          document.getElementById("contactForm").submit();
+        }
+      }
+
+      function isValidEmail(email) {
+        const re = /\S+@\S+\.\S+/;
+        return re.test(email);
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

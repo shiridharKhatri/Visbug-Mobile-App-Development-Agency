@@ -1,0 +1,1436 @@
+@font-face {
+  font-family: montserrat;
+  src: url(/Montserrat/Montserrat-SemiBold.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: hind;
+  src: url(/hind/Hind-Regular.ttf);
+  font-weight: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #f6f7f8;
+  -webkit-tap-highlight-color: transparent;
+}
+section,
+footer {
+  overflow: hidden;
+  white-space: wrap;
+  word-break: break-word;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  transition: 0.3s ease;
+  z-index: 99999;
+}
+nav .secondaryNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5rem;
+  max-width: 1380px;
+  margin: auto;
+}
+nav a {
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin: 0 2rem;
+}
+nav ul li a {
+  text-decoration: none;
+  font-family: "montserrat";
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+nav .logo h2 {
+  font-family: "montserrat";
+  font-size: 1.7rem;
+  color: #ffffff;
+}
+nav .logo h5 {
+  font-family: "hind";
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+header {
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/hero-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+header .headerContainer {
+  width: 100%;
+  height: 100%;
+  background: #232c39d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .headerContainer .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+header .headerContainer .content h1 {
+  font-size: 5.4rem;
+  font-family: "montserrat";
+  font-weight: 500;
+  width: 60rem;
+  text-align: center;
+  color: #ffffff;
+}
+header .headerContainer .content p {
+  font-family: "hind";
+  font-size: 2rem;
+  color: #f0f1f2;
+  margin: 2rem 0;
+}
+header .headerContainer .content button {
+  font-size: 1.5rem;
+  font-family: "montserrat";
+  padding: 1rem 3rem;
+  background: #fb2056;
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: inline-block;
+  width: auto;
+  height: 5rem;
+  line-height: 1;
+  box-shadow: inset 0 0 0 9rem rgba(255, 255, 255, 0),
+    0 1rem 1rem -1rem rgba(35, 44, 57, 0.1);
+  -webkit-transition: all 0.75s cubic-bezier(0, 1, 0.5, 1);
+  transition: all 0.75s cubic-bezier(0, 1, 0.5, 1);
+  margin-top: 1rem;
+  color: #ffffff;
+}
+header .headerContainer .content button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.wrap {
+  /* max-width: 1280px;
+  margin: auto; */
+}
+section.infoAbout {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.03);
+}
+section.infoAbout .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 3rem;
+  max-width: 1280px;
+  margin: auto;
+}
+section.infoAbout .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: auto;
+  margin: 1rem;
+}
+section.infoAbout .items i {
+  font-size: 3.5rem;
+  color: #fb2056;
+  margin-bottom: 1rem;
+}
+section.infoAbout .items h2 {
+  font-size: 2rem;
+  font-family: "montserrat";
+  color: #232c39;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+section.infoAbout .items p {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #647585;
+  font-family: "hind";
+}
+section.service {
+  padding: 13rem 5rem;
+}
+section.service h1 {
+  font-family: "montserrat";
+  color: #232c39;
+  font-size: 2.4rem;
+  text-align: center;
+}
+section.service h4 {
+  font-family: "hind";
+  color: #647585;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+section.service .serviceCardContainer {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+section.service .serviceCardContainer .cards {
+  margin: 0 1.5rem;
+  background: #ffffff;
+  box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.05);
+  width: 35rem;
+  border-radius: 0.5rem;
+}
+section.service .serviceCardContainer .cards img {
+  width: 100%;
+  height: 22rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  cursor: pointer;
+}
+section.service .serviceCardContainer .cards .descriptionText {
+  padding: 3rem;
+}
+section.service .serviceCardContainer .cards .descriptionText h2 {
+  font-family: "montserrat";
+  color: #232c39;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+section.service .serviceCardContainer .cards .descriptionText a {
+  text-decoration: none;
+}
+section.service .serviceCardContainer .cards .descriptionText h2:hover {
+  color: #647585;
+}
+section.service .serviceCardContainer .cards .descriptionText p {
+  line-height: 1.5;
+  font-family: "hind";
+  color: #647585;
+  font-size: 1.8rem;
+}
+section.workWithUs {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/sample-1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50rem;
+}
+section.workWithUs .mainContainer {
+  height: 100%;
+  width: 100%;
+  background: #232c39d7;
+}
+section.workWithUs .mainContainer .workWithUsContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+section.workWithUs .mainContainer .workWithUsContainer h2 {
+  width: 65rem;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 2rem;
+  font-family: "hind";
+  color: #ffffff;
+  font-weight: 400;
+}
+section.workWithUs .mainContainer .workWithUsContainer button {
+  font-size: 1.5rem;
+  font-family: "montserrat";
+  padding: 1rem 3rem;
+  background: #fb2056;
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: inline-block;
+  width: auto;
+  height: 5rem;
+  line-height: 1;
+  box-shadow: inset 0 0 0 9rem rgba(255, 255, 255, 0),
+    0 1rem 1rem -1rem rgba(35, 44, 57, 0.1);
+  -webkit-transition: all 0.75s cubic-bezier(0, 1, 0.5, 1);
+  transition: all 0.75s cubic-bezier(0, 1, 0.5, 1);
+  margin-top: 3rem;
+  color: #ffffff;
+}
+section.workWithUs .mainContainer .workWithUsContainer button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+section.latestWork {
+  padding: 13rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+}
+section.latestWork h1 {
+  font-family: "montserrat";
+  color: #232c39;
+  font-size: 2.4rem;
+  text-align: center;
+}
+section.latestWork h4 {
+  font-family: "hind";
+  color: #647585;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+section.latestWork .gridDisplayMain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 95%;
+  max-width: 1280px;
+  margin: 6rem auto;
+}
+section.latestWork .gridDisplayMain .gridItems {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+section.latestWork .gridDisplayMain .gridItems img {
+  width: 100%;
+  height: 21rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 0.1rem solid rgba(68, 68, 85, 0.402);
+  cursor: pointer;
+}
+section.latestWork .gridDisplayMain .gridItems a {
+  position: absolute;
+  background: #101010ba;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: "montserrat";
+  color: #ffffff;
+  opacity: 0;
+  transition: 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+section.latestWork .gridDisplayMain .gridItems a:hover {
+  opacity: 1;
+  background: #101010c5;
+}
+section.feedback {
+  height: auto;
+  width: auto;
+  margin: 8rem 2rem;
+  display: block;
+}
+#mobileFeedback {
+  display: none;
+}
+section.feedback .feedbackContainer {
+  display: flex;
+  max-width: 1280px;
+  margin: auto;
+}
+section.feedback .review {
+  padding: 4rem;
+  margin: 1rem 1rem 4rem 1rem;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 1rem;
+  cursor: grab;
+}
+section.feedback .review .stars i {
+  color: #fdcc0d;
+  font-size: 1.5rem;
+}
+section.feedback .review .reviewMain p {
+  font-size: 1.8rem;
+  font-family: "hind";
+  color: #647585;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-style: italic;
+  margin: 1rem 0;
+}
+section.feedback .review .reviewMain h3 {
+  font-size: 1.5rem;
+  color: #647585;
+  font-family: "montserrat";
+}
+
+section.feedback .review .reviewMain h5 {
+  font-size: 1.5rem;
+  color: #647585;
+  font-family: "hind";
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+section.messageUs {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/sample-1.jpeg);
+  height: 25rem;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section.messageUs .mainMessageUsSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 10rem;
+  height: 100%;
+  width: 100%;
+  background: #232c39d7;
+}
+section.messageUs .text h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  font-family: "montserrat";
+}
+section.messageUs .text p {
+  font-size: 2rem;
+  color: #f6f7f8;
+  font-family: "hind";
+  margin-top: 1rem;
+}
+
+section.messageUs button {
+  font-size: 1.5rem;
+  font-family: "montserrat";
+  padding: 1rem 3rem;
+  background: #fb2056;
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: inline-block;
+  width: auto;
+  height: 5rem;
+  line-height: 1;
+  box-shadow: inset 0 0 0 9rem rgba(255, 255, 255, 0),
+    0 1rem 1rem -1rem rgba(35, 44, 57, 0.1);
+  -webkit-transition: all 0.75s cubic-bezier(0, 1, 0.5, 1);
+  transition: all 0.75s cubic-bezier(0, 1, 0.5, 1);
+  margin-top: 1rem;
+  color: #ffffff;
+}
+section.messageUs button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+section.blogSection {
+  height: 45vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/blog.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.blogSection .headBlog {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #232c39d7;
+}
+section.blogSection .headBlog h1 {
+  font-size: 5.2rem;
+  font-family: "montserrat";
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+section.blogSection .headBlog p {
+  font-size: 2rem;
+  font-family: "hind";
+  color: #ffffff;
+}
+section.mainBoxBlog {
+  padding: 7rem;
+}
+section.mainBoxBlog .blogGridDisplay {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1280px;
+  margin: auto;
+}
+section.mainBoxBlog .blogGridDisplay .cards {
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 1rem 1rem;
+}
+section.mainBoxBlog .blogGridDisplay .cards img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+section.mainBoxBlog .blogGridDisplay .cards .details {
+  padding: 2.5rem;
+}
+section.mainBoxBlog .blogGridDisplay .cards .details h2 {
+  font-size: 1.6rem;
+  font-family: "montserrat";
+  color: #232c39;
+  margin-bottom: 1rem;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+section.mainBoxBlog .blogGridDisplay .cards .details a {
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+section.mainBoxBlog .blogGridDisplay .cards .details h2:hover {
+  color: #647585;
+}
+section.mainBoxBlog .blogGridDisplay .cards .details p {
+  font-size: 1.8rem;
+  font-family: "hind";
+  color: #647585;
+  line-height: 1.5;
+}
+section.mainBoxBlog .blogGridDisplay .cards .details h3 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-family: "montserrat";
+  color: #232c39;
+}
+section.mainBoxBlog .blogGridDisplay .cards .details h3 span {
+  margin-right: 0.5rem;
+}
+section.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.contact .contactHead {
+  height: 45vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section.contact .contactHead .secondaruContactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: #232c39d7;
+}
+section.contact .contactHead .secondaruContactContainer h1 {
+  font-size: 5.2rem;
+  color: #ffffff;
+  font-family: "montserrat";
+  margin-bottom: 2rem;
+}
+section.contact .contactHead .secondaruContactContainer p {
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: "hind";
+}
+section.contact form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+section.contact form h1 {
+  font-size: 4rem;
+  font-family: "roboto-condensed";
+  color: #212529;
+  margin-bottom: 3rem;
+}
+section.contact form p {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  margin: 1rem 0;
+}
+section.contact form .formSec .item {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 3rem 0;
+}
+section.contact form .formSec .item label {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  font-family: sans-serif;
+}
+section.contact form .formSec .item input {
+  padding: 1rem;
+  height: 5rem;
+  border: 0.1rem solid #212529;
+  border-radius: 0.5rem;
+}
+section.contact form .formSec .item textarea {
+  padding: 1rem;
+  border: 0.1rem solid #212529;
+  border-radius: 0.5rem;
+}
+section.contact form button {
+  margin-top: 3rem;
+  padding: 1rem;
+  width: 13rem;
+  font-size: 1.7rem;
+  height: 5rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  background: #232c39;
+}
+section.faq {
+  background: #ffffff;
+}
+section.faq .headFaq {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/hero-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+section.faq .headFaq .secondaryFaq {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #232c39d7;
+}
+section.faq .headFaq .secondaryFaq h1 {
+  font-size: 5.2rem;
+  color: #ffffff;
+  font-family: "montserrat";
+}
+section.faq .faq-container {
+  width: 60%;
+  margin: 10rem auto;
+  /* background-color: red; */
+}
+section.faq .faq-item {
+  margin: 1.5rem;
+}
+section.faq .question {
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "montserrat";
+  color: #647585;
+  font-size: 1.5rem;
+  background: #f6f7f8;
+  padding: 1rem;
+  height: 5rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transition: 0.3s ease;
+}
+section.faq .question:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+section.faq .answer {
+  display: none;
+  font-family: "hind";
+  color: #647585;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+section.portfolioSec .portfolioHead {
+  height: 38vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/portfolio.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+section.portfolioSec .portfolioHead .secondarySection {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #232c39d7;
+}
+section.portfolioSec .portfolioHead .secondarySection h1 {
+  font-size: 5.2rem;
+  color: #ffffff;
+  font-family: "montserrat";
+}
+section.portfolioSec .mainPortfolioDisplay {
+  padding: 10rem 5rem;
+}
+section.portfolioSec .mainPortfolioDisplay .gridDisplay {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  max-width: 1280px;
+  margin: auto;
+}
+section.portfolioSec .mainPortfolioDisplay .gridDisplay .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 1rem;
+}
+section.portfolioSec .mainPortfolioDisplay .gridDisplay .items img {
+  width: 100%;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+section.portfolioSec .mainPortfolioDisplay .gridDisplay .items a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  background: #212529eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "montserrat";
+  font-style: 1.6rem;
+  transition: 0.2s ease;
+  opacity: 0;
+  text-decoration: none;
+}
+section.portfolioSec .mainPortfolioDisplay .gridDisplay .items a:hover {
+  opacity: 1;
+}
+section.indPortfolio .indPortfolioHead {
+  height: 45vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+section.indPortfolio .indPortfolioHead .secondarySection {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #232c39d7;
+}
+section.indPortfolio .indPortfolioHead .secondarySection h1 {
+  font-size: 5.2rem;
+  color: #ffffff;
+  font-family: "montserrat";
+  margin-top: 15rem;
+}
+section.indPortfolio {
+  background-color: #ffffff;
+}
+section.indPortfolio .content {
+  padding: 10rem 0rem;
+  max-width: 1280px;
+  margin: auto;
+}
+section.indPortfolio .content h3 {
+  font-size: 1.2rem;
+  color: #232c39;
+  font-family: "montserrat";
+  margin-bottom: 2rem;
+}
+section.indPortfolio .content h3 a {
+  color: #647585;
+  text-decoration: none;
+}
+section.indPortfolio .content p {
+  font-size: 2rem;
+  color: #647585;
+  font-family: "hind";
+  margin-bottom: 2rem;
+  font-weight: 400;
+  margin-top: 5rem;
+}
+section.indPortfolio .content p a {
+  color: #232c39;
+  text-decoration: none;
+}
+section.indPortfolio .content img {
+  width: 100%;
+}
+section.indPortfolio .content h2 {
+  margin: 4rem 2rem;
+  font-size: 2.5rem;
+  color: #647585;
+  font-family: "hind";
+  text-align: center;
+  font-weight: 400;
+}
+section.indPortfolio .content .mainContentOfPortfolio {
+  margin: 8rem 2rem;
+}
+section.indPortfolio .content .mainContentOfPortfolio .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.indPortfolio .content .mainContentOfPortfolio .items p {
+  width: 50%;
+  text-align: center;
+  color: #647585;
+  font-size: 2.4rem;
+  font-family: "hind";
+}
+section.indPortfolio .content .mainContentOfPortfolio .items img {
+  width: 35rem;
+  height: 100%;
+}
+section.indPortfolio .belowButton {
+  padding: 4rem 5rem;
+  background-color: #f0f1f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.indPortfolio .belowButton button {
+  font-family: "montserrat";
+  color: #647585;
+  font-size: 1.4rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+section.indPortfolio .otherContent ul {
+  margin: 3rem 5rem;
+}
+section.indPortfolio .otherContent ul li {
+  width: 65%;
+  font-size: 2rem;
+  font-family: "hind";
+  margin: 1rem 0;
+  color: #647585;
+}
+section.indPortfolio .otherContent h4 {
+  font-size: 2rem;
+  font-family: "hind";
+  margin: 1rem 0;
+  color: #647585;
+  font-style: italic;
+  font-weight: 400;
+}
+section.indService .topHeaderService {
+  height: 55vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.indService .topHeaderService .secondaryService {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #232c39d7;
+}
+
+section.indService .topHeaderService .secondaryService h1 {
+  font-size: 5.2rem;
+  font-family: "montserrat";
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+section.indService .topHeaderService .secondaryService p {
+  font-size: 2rem;
+  font-family: "hind";
+  color: #ffffff;
+}
+section.indService .mainContentBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+section.indService .mainContentBox .content {
+  width: 65%;
+  padding: 2rem;
+}
+section.indService .mainContentBox .content p {
+  margin: 2rem 0;
+  font-size: 2rem;
+  color: #647585;
+  font-family: "hind";
+}
+section.tutorialSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.tutorialSection .tutContainer {
+  max-width: 1280px;
+  margin: 10rem auto;
+}
+section.tutorialSection .tutContainer h2 {
+  background: #a4a8ac;
+  font-size: 1.4rem;
+  color: #232c39;
+  font-family: "hind";
+  font-weight: 400;
+}
+section.tutorialSection .tutContainer a {
+  text-decoration: none;
+  color: #647585;
+}
+section.tutorialSection .tutContainer h3 {
+  font-size: 1.2rem;
+  color: #101010;
+  font-family: "montserrat";
+  font-weight: 400;
+  margin: 2rem 0 1rem 0;
+}
+section.tutorialSection .elements h1 {
+  font-size: 3rem;
+  color: #232c39;
+  font-family: "montserrat";
+  margin: 2rem 0;
+}
+section.tutorialSection .elements p {
+  font-family: "hind";
+  font-size: 2rem;
+  color: #647585;
+  margin-bottom: 3rem;
+}
+section.tutorialSection .elements h2 {
+  background: transparent;
+  font-size: 5.5rem;
+  font-weight: bold;
+  color: #647585;
+}
+section.tutorialSection .elements hr {
+  margin: 2rem 0;
+}
+section.tutorialSection .elements h3 {
+  font-size: 2rem;
+  color: #647585;
+}
+section.tutorialSection .elements h4 {
+  color: #647585;
+  font-family: "hind";
+}
+section.tutorialSection .elements ul,
+section.tutorialSection .elements ol {
+  margin: 1rem 2rem;
+}
+section.tutorialSection .elements li {
+  color: #647585;
+  font-family: "hind";
+  font-size: 2rem;
+}
+.boxed-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.boxed-table th,
+.boxed-table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+
+  color: #647585;
+  font-family: "hind";
+  font-size: 2rem;
+}
+
+.boxed-table th {
+  color: #647585;
+  font-family: "hind";
+  font-size: 2rem;
+}
+
+section.replay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0 10rem 0;
+}
+
+section.replay .error-message {
+  display: none;
+  color: red;
+  font-size: 0.8em;
+}
+
+section.replay .error {
+  border: 1px solid red;
+}
+
+section.replay .replySection {
+  width: 60%;
+}
+section.replay .replySection h3 {
+  color: #232c39;
+  font-size: 2.2rem;
+  font-family: "montserrat";
+}
+section.replay .replySection p {
+  color: #232c39;
+  font-size: 1.6rem;
+  font-family: "hind";
+  margin: 1rem 0;
+}
+section.replay .replySection form .item {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+section.replay .replySection form .item label {
+  color: #232c39;
+  font-size: 1.6rem;
+  font-family: "hind";
+  margin: 0.5rem;
+}
+section.replay .replySection form .item input {
+  padding: 1rem;
+  height: 5rem;
+  border-radius: 1rem;
+  border: 0.1rem solid rgba(68, 68, 85, 0.783);
+}
+section.replay .replySection form .item textarea {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.1rem solid rgba(68, 68, 85, 0.783);
+}
+section.replay .replySection form button {
+  padding: 1rem;
+  height: 5rem;
+  width: 20rem;
+  font-size: 1.7rem;
+  font-family: "montserrat";
+  border: none;
+  border-radius: 0.5rem;
+  background: #232c39;
+  color: #ffffff;
+}
+footer {
+  background: #232c39;
+  width: 100%;
+  padding: 10rem 4rem 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+}
+footer .firstSection {
+  display: flex;
+}
+footer .firstSection .itemOne {
+  width: 55%;
+}
+footer .firstSection .itemTwo {
+  width: 45%;
+}
+footer .firstSection .itemTwo h3 {
+  font-size: 1.6rem;
+  color: #f0f1f2;
+  font-family: "montserrat";
+  margin: 2rem 0;
+}
+footer .firstSection .itemTwo p {
+  font-size: 1.7rem;
+  color: #a4a8ac;
+  font-family: "hind";
+  margin-bottom: 2rem;
+}
+footer .firstSection .itemTwo form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #647585;
+  width: 50rem;
+}
+footer .firstSection .itemTwo form input {
+  width: 90%;
+  padding: 1rem;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-family: "hind";
+  font-size: 1.7rem;
+}
+footer .firstSection .itemTwo form button {
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: #647585;
+  background: transparent;
+  border: none;
+}
+footer .firstSection .itemTwo form input::placeholder {
+  font-family: "hind";
+}
+footer .secondSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin: 10rem 0 3rem 0;
+}
+footer .secondSection {
+  font-family: "hind";
+  font-size: 1.6rem;
+  color: #a4a8ac;
+}
+footer .secondSection a {
+  text-decoration: none;
+}
+footer .secondSection button {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: none;
+  height: 3.2rem;
+  width: 3.2rem;
+  cursor: pointer;
+}
+#menu {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  footer .firstSection .itemOne {
+    display: none;
+  }
+  footer .firstSection .itemTwo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #menu {
+    display: block;
+    z-index: 99999999;
+  }
+  #menu i {
+    font-size: 3.5rem;
+    color: #f0f1f2;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    background: #232c39f7;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s ease;
+    transform: scale(0);
+  }
+  nav ul li {
+    margin: 2.2rem 0;
+  }
+  nav ul li a {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  section.infoAbout .wrap {
+    flex-direction: column;
+  }
+  nav {
+    padding: 0;
+  }
+  nav .secondaryNav{
+    padding: 3rem 3rem;
+  }
+  section.service .serviceCardContainer {
+    flex-direction: column;
+  }
+  section.service .serviceCardContainer .cards {
+    width: 100%;
+    margin: 3rem 0;
+  }
+  section.service .serviceCardContainer .cards img {
+    height: auto;
+  }
+  section.messageUs .mainMessageUsSection {
+    align-items: self-start;
+    flex-direction: column;
+    padding: 6rem 3rem;
+  }
+  section.messageUs {
+    height: auto;
+  }
+  section.messageUs button {
+    margin-top: 4rem;
+  }
+  section.latestWork .gridDisplayMain {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section.latestWork {
+    padding: 13rem 1rem;
+  }
+  section.feedback {
+    height: auto;
+    width: auto;
+  }
+  header .headerContainer .content h1 {
+    font-size: 4rem;
+    width: 100%;
+  }
+
+  section.workWithUs .mainContainer .workWithUsContainer h2 {
+    width: 90%;
+  }
+  section.mainBoxBlog .blogGridDisplay {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  section.portfolioSec .mainPortfolioDisplay .gridDisplay {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section.indPortfolio .content {
+    padding: 7rem 2rem;
+    width: 95%;
+    margin: 0 auto;
+  }
+  section.indPortfolio .indPortfolioHead .secondarySection h1 {
+    font-size: 4rem;
+    margin-top: 8rem;
+    width: 90%;
+    text-align: center;
+  }
+  #desktopFeedback {
+    display: none;
+  }
+  #mobileFeedback {
+    display: block;
+  }
+  section.blogSection .headBlog h1 {
+    font-size: 3.2rem;
+    margin-top: 8rem;
+    text-align: center;
+    width: 90%;
+  }
+  section.tutorialSection .tutContainer {
+    width: 95%;
+  }
+  section.replay .replySection {
+    width: 95%;
+  }
+  section.tutorialSection .tutContainer img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 560px) {
+  section.latestWork .gridDisplayMain {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.latestWork .gridDisplayMain .gridItems {
+    height: auto;
+  }
+  section.service {
+    padding: 13rem 2rem;
+  }
+  footer {
+    width: 100%;
+    padding: 8rem 2rem 1rem 2rem;
+  }
+  footer .firstSection .itemTwo form {
+    width: auto;
+  }
+  nav .logo {
+    margin-right: 3rem;
+  }
+  header .headerContainer .content h1 {
+    font-size: 3rem;
+  }
+  section.latestWork {
+    padding: 13rem 1rem 5rem 1rem;
+  }
+  footer .secondSection {
+    padding: 0;
+    margin: 6rem 0 3rem 0;
+  }
+  header .headerContainer .content {
+    width: 90%;
+  }
+  header .headerContainer .content p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  section.contact .contactHead {
+    height: 65vh;
+  }
+  section.contact .contactHead .secondaruContactContainer h1 {
+    font-size: 4.2rem;
+    text-align: center;
+    width: 90%;
+  }
+  section.contact .contactHead .secondaruContactContainer p {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 90%;
+  }
+  section.contact form {
+    width: 90%;
+  }
+  section.mainBoxBlog .blogGridDisplay {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.mainBoxBlog {
+    padding: 5rem 2rem;
+  }
+  section.faq .faq-container {
+    width: 95%;
+    margin: 7rem auto;
+  }
+  section.portfolioSec .mainPortfolioDisplay .gridDisplay {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.portfolioSec .mainPortfolioDisplay {
+    padding: 6rem 2rem;
+  }
+  section.indPortfolio .content .mainContentOfPortfolio .items {
+    flex-direction: column;
+  }
+  section.indPortfolio .content .mainContentOfPortfolio .items p {
+    width: 100%;
+  }
+  section.indPortfolio .content .mainContentOfPortfolio .items img {
+    width: 100%;
+  }
+  section.indPortfolio .content h2 {
+    margin: 2rem 2rem;
+    font-size: 1.5rem;
+  }
+  section.indPortfolio .content .mainContentOfPortfolio .one,
+  section.indPortfolio .content .mainContentOfPortfolio .three {
+    flex-direction: column-reverse;
+  }
+  section.indPortfolio .content .mainContentOfPortfolio p {
+    font-size: 2rem;
+    color: #647585;
+    font-family: "hind";
+    margin-bottom: 5rem;
+    font-weight: 400;
+    margin-top: 0rem;
+  }
+  section.indPortfolio .content p {
+    font-size: 1.7rem;
+  }
+  section.indPortfolio .otherContent ul {
+    margin: 2rem 2rem;
+  }
+  section.indPortfolio .otherContent ul li {
+    width: 100%;
+    font-size: 1.7rem;
+  }
+  section.indPortfolio .otherContent h4 {
+    font-size: 1.7rem;
+  }
+  section.indPortfolio .belowButton {
+    padding: 3rem 2rem;
+  }
+  section.feedback .review .reviewMain p {
+    font-size: 1.5rem;
+  }
+  section.feedback .review {
+    padding: 2rem;
+  }
+  section.feedback .review {
+    margin: 0rem 0rem 4rem 0rem;
+  }
+  section.indService .topHeaderService .secondaryService h1 {
+    margin-top: 8rem;
+    font-size: 4rem;
+    width: 90%;
+    text-align: center;
+  }
+  section.indService .mainContentBox .content {
+    width: 100%;
+  }
+  section.indService .mainContentBox {
+    padding: 1rem 0;
+  }
+}
+@media (min-width: 896px) {
+  section.indPortfolio .content {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section.tutorialSection .tutContainer {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1280px) {
+  header .headerContainer .content h1 {
+    font-size: 7rem;
+    width: 80rem;
+  }
+}

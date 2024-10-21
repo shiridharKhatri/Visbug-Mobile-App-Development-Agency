@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5b67d7fb40.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Faq - Visbug Mobile App Development Agency</title>
+    <style>
+      .error-message {
+        color: red;
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
+      }
+      .error-border {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navBar">
+      <div class="secondaryNav">
+      <a href="/">
+        <div class="logo">
+          <h2>Visbug Mobile App Development Agency</h2>
+          <h5>Dallas TX</h5>
+        </div>
+      </a>
+      <ul id="menuItems">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="/portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="/faq.html">FAQ</a>
+        </li>
+        <li>
+          <a href="/contact-us.html">Contact Us</a>
+        </li>
+      </ul>
+      <div id="menu"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    </nav>
+
+    <section class="faq" id="faq">
+      <div class="headFaq">
+        <div class="secondaryFaq">
+          <h1>Faq</h1>
+        </div>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="question">What is the Genesis Simple FAQ plugin?</div>
+          <div class="answer">
+            Genesis Simple FAQ is a plugin for the Genesis Framework to manage
+            FAQ components via shortcodes.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="question">
+            How does the Genesis Simple FAQ plugin work?
+          </div>
+          <div class="answer">
+            Adding a FAQ is simple. All you need to do is create an FAQ through
+            the WordPress dashboard, and display your FAQs on your site by way
+            of a shortcode. Click here for more documentation and usage of the
+            Genesis Simple FAQ plugin.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="question">
+            Can I customize the design of my FAQ section?
+          </div>
+          <div class="answer">
+            Yes, the Genesis Simple FAQ plugin has basic styles included in
+            order to look good on any Genesis website. You are also able to
+            customize it to match your website using your child theme’s
+            style.css file.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="question">
+            Where can I show the FAQ section on my website?
+          </div>
+          <div class="answer">
+            You are able to add the FAQ section to many locations on your
+            website, including a front page widget section, your page content,
+            or a sidebar widget.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="question">
+            Where can I download the Genesis Simple FAQ plugin?
+          </div>
+          <div class="answer">
+            The Genesis Simple FAQ plugin is available on WordPress.org.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="messageUs">
+      <div class="mainMessageUsSection">
+        <div class="text">
+          <h1>Let’s work together</h1>
+          <p>
+            Get in touch with us and send some basic info about your project.
+          </p>
+        </div>
+        <button><a href="/contact-us.html">Message us</a></button>
+      </div>
+    </section>
+    <footer>
+      <div class="firstSection">
+        <div class="itemOne"></div>
+        <div class="itemTwo">
+          <img src="#" alt="logo" />
+          <h3>Newsletter</h3>
+          <p>Stay up to date by subscribing to our newsletter.</p>
+          <form action="">
+            <input type="email" placeholder="example@gmail.com" />
+            <button><i class="fa-regular fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="secondSection">
+        <p>Copyright &copy; 2024 · Visbug</p>
+        <a href="#faq"><button><i class="fa-solid fa-angle-up"></i></button></a>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const questions = document.querySelectorAll(".question");
+
+        questions.forEach((question) => {
+          question.addEventListener("click", function () {
+            const answer = this.nextElementSibling;
+
+            if (answer.style.display === "block") {
+              answer.style.display = "none";
+            } else {
+              answer.style.display = "block";
+            }
+          });
+        });
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

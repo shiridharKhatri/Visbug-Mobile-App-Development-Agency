@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5b67d7fb40.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Beginner HTML Tutorial - Visbug Mobile App Development Agency</title>
+  </head>
+  <body>
+    <nav id="navBar">
+      <div class="secondaryNav">
+      <a href="/">
+        <div class="logo">
+          <h2>Visbug Mobile App Development Agency</h2>
+          <h5>Dallas TX</h5>
+        </div>
+      </a>
+      <ul id="menuItems">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="/portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="/faq.html">FAQ</a>
+        </li>
+        <li>
+          <a href="/contact-us.html">Contact Us</a>
+        </li>
+      </ul>
+      <div id="menu"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    </nav>
+    <section
+      class="blogSection"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url(/html_tutorial.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="headBlog" id="headBlog">
+        <h1>Beginner HTML Tutorial</h1>
+      </div>
+    </section>
+    <section class="tutorialSection">
+      <div class="tutContainer">
+        <h2>
+          You are here: <a href="/index.html">Home</a> /
+          <a href="/category/tutorial.html">Tutorial</a> / Beginner HTML Tutorial
+        </h2>
+        <h3>by Visbug <a href="#replyUs">Leave a Comment</a></h3>
+        <img src="/html_tutorial.png" alt="tut" />
+        <div class="elements">
+          <h1>HTML Elements</h1>
+          <p>
+            An HTML element is one that contains a start tag and end tag, with
+            content inserted between the tags. The structure of an HTML element
+            is:
+          </p>
+
+          <p>&lt;starttag&gt; Content &lt;/endtag&gt;</p>
+
+          <p>
+            The HTML element includes everything from the start tag to the end
+            tag.
+          </p>
+
+          <p>An example could be:</p>
+
+          <p>&lt;p&gt; A small little paragraph &lt;/p&gt;</p>
+
+          <p>
+            The &lt;p&gt; tag represents a paragraph. Take note that the start
+            tag is enclosed by the less than and greater than sign. Same goes
+            with the end tag, however, there is a slash as well.
+          </p>
+        </div>
+        <div class="elements">
+          <h1>Html Headings</h1>
+          <p>
+            Headings are essential to the structure in websites and make the
+            content more organized for the users. These can be placed into a
+            website in various sizes. They can be defined with the &lt;h1&gt;
+            going all the way to &lt;h6&gt; tags where the &lt;h1&gt; tag
+            represents the largest header and &lt;h6&gt; the smallest.
+          </p>
+
+          <p>Example</p>
+          <p>&lt;h1&gt; This is the largest header &lt;/h1&gt;</p>
+          <p>&lt;h2&gt; This one is not as big &lt;/h2&gt;</p>
+          <p>&lt;h3&gt; It is starting to get smaller &lt;/h3&gt;</p>
+          <p>&lt;h4&gt; and smaller &lt;/h4&gt;</p>
+          <p>&lt;h5&gt; Almost there &lt;/h5&gt;</p>
+          <p>&lt;h6&gt; There we go. &lt;/h6&gt;</p>
+        </div>
+        <div class="elements">
+          <h1>Html Paragraphs</h1>
+          <p>HTML paragraphs can be defined using the &lt;p&gt; tag.</p>
+
+          <p>Example</p>
+
+          <p>&lt;p&gt; This is some text &lt;/p&gt;</p>
+
+          <p>
+            Note: It is important that you always have the end tag otherwise,
+            you may face some random errors or unexpected outcomes.
+          </p>
+        </div>
+        <div class="elements">
+          <h1>Html Line Breaks</h1>
+          <p>
+            Line breaks in HTML are defined by the &lt;br&gt; tag. You should be
+            using the &lt;br&gt; tag if you would like to make some text in a
+            paragraph fall on a new line.
+          </p>
+
+          <p>Example</p>
+
+          <p>
+            &lt;p&gt; The world is a great place filled with many awesome people
+            &lt;br&gt; going on amazing adventures &lt;/p&gt;
+          </p>
+
+          <p>The above sentence would be displayed as:</p>
+
+          <p>
+            The world is a great place filled with many awesome people <br />
+            going on amazing adventures.
+          </p>
+
+          <p>
+            Note: The &lt;br&gt; tag is an empty tag, therefore, it does not
+            require an end tag.
+          </p>
+        </div>
+        <div class="elements">
+          <h1>Html Horizontal rule</h1>
+          <p>
+            The &lt;hr&gt; tag is used to define the HTML horizontal rule. It
+            can be used to neaten up a website by adding a straight horizontal
+            line across the website in an organized manner.
+          </p>
+
+          <p>
+            There is no need for an example for this part, however, it must be
+            noted again that the &lt;hr&gt; tag is an empty tag and does not
+            require an end tag.
+          </p>
+        </div>
+        <div class="elements">
+          <h1>Html Text Decoration Methods</h1>
+          <p>
+            There are various methods of text decorating/formatting which
+            include bold, italic, underline and strikethrough. These can help
+            the text look more presentable to the user.
+          </p>
+        </div>
+        <div class="elements">
+          <h1>Bold</h1>
+          <p>
+            To represent a piece of text that you would like to be in bold, you
+            use the &lt;b&gt; tag. Alternatively, you can use the &lt;strong&gt;
+            tag to represent a piece of text of added importance.
+          </p>
+
+          <p>Example</p>
+
+          <p>
+            &lt;p&gt; This is a paragraph which contains &lt;b&gt; some bold
+            text. &lt;/b&gt; &lt;/p&gt;
+          </p>
+
+          <p>In the example above, the output would be:</p>
+
+          <p>This is a paragraph which contains <b>some bold text.</b></p>
+
+          <p>
+            Note: The &lt;b&gt; tag could be replaced with the &lt;strong&gt;
+            tag and the outcome would be very similar.
+          </p>
+        </div>
+        <div class="elements">
+          <h1>Italic</h1>
+          <p>
+            To represent some text you may want to be in italic, you would use
+            the &lt;i&gt; tag. The same goes for italic where you can use the
+            &lt;em&gt; tag to represent italic text with added importance.
+          </p>
+
+          <p>Example</p>
+
+          <p>&lt;i&gt; This is some italic text. &lt;/i&gt;</p>
+
+          <p>The output for this would be:</p>
+
+          <p>
+            <i>This is some italic text.</i>
+          </p>
+
+          <p>
+            Similarly, the &lt;em&gt; tag could be used in place of the
+            &lt;i&gt; tag.
+          </p>
+        </div>
+        <div class="elements">
+          <h1>Underline</h1>
+          <p>
+            The &lt;u&gt; tag can be used to underline some text for whatever
+            reason such as a misspelled word.
+          </p>
+
+          <p>Example</p>
+
+          <p>
+            &lt;p&gt; They &lt;u&gt; always &lt;/u&gt; go to the mall.
+            &lt;/p&gt;
+          </p>
+
+          <p>
+            In the example above, the word “always” would be underlined due to a
+            spelling error.
+          </p>
+        </div>
+        <div class="elements">
+          <h1>Strikethrough</h1>
+          <p>
+            The &lt;del&gt; tag can be used to define text that was
+            removed/deleted.
+          </p>
+
+          <p>Example</p>
+
+          <p>
+            &lt;p&gt; My favorite food is &lt;del&gt; chicken &lt;/del&gt;
+            pizza! &lt;/p&gt;
+          </p>
+
+          <p>
+            In the example above, the word “chicken” would be displayed with a
+            strikethrough as it has been removed or deleted.
+          </p>
+        </div>
+        <div class="elements">
+          <h1>Html Unordered Lists</h1>
+          <p>
+            To initiate an unordered list, you use the &lt;ul&gt; tag. After,
+            you can list each item using the &lt;li&gt; tag. In an unordered
+            list, bullets would be used to mark each list item.
+          </p>
+
+          <p>Example</p>
+
+          <p>&lt;h2&gt; Some of my favorite sodas: &lt;/h2&gt;</p>
+
+          <p>
+            &lt;ul&gt; <br />
+            &nbsp;&nbsp;&lt;li&gt; Coke&lt;/li&gt; <br />
+            &nbsp;&nbsp;&lt;li&gt; Fanta&lt;/li&gt; <br />
+            &nbsp;&nbsp;&lt;li&gt; Sprite&lt;/li&gt; <br />
+            &lt;/ul&gt;
+          </p>
+
+          <p>
+            In the above example, the list items represent some of the favorite
+            sodas, displayed with bullets preceding each item.
+          </p>
+          <h1>Some of my favorite sodas:</h1>
+          <ul>
+            <li>Coke</li>
+            <li>Fanta</li>
+            <li>Sprite</li>
+          </ul>
+        </div>
+        <div class="elements">
+          <h1>Html Ordered Lists</h1>
+          <p>
+            An ordered list has a similar syntax. To initiate an ordered list,
+            we use the &lt;ol&gt; tag and after that, you can list each item
+            using the &lt;li&gt; tag.
+          </p>
+
+          <p>Example</p>
+
+          <p>&lt;h2&gt; My favorite subjects: &lt;/h2&gt;</p>
+
+          <p>
+            &lt;ol&gt; <br />
+            &nbsp;&nbsp;&lt;li&gt; Maths &lt;/li&gt; <br />
+            &nbsp;&nbsp;&lt;li&gt; Computer Science &lt;/li&gt; <br />
+            &nbsp;&nbsp;&lt;li&gt; Physics &lt;/li&gt; <br />
+            &lt;/ol&gt;
+          </p>
+
+          <p>The output of the example would be:</p>
+          <h1>Some of my favorite sodas:</h1>
+          <ol>
+            <li>Maths</li>
+            <li>Computer Science</li>
+            <li>Physics</li>
+          </ol>
+        </div>
+        <div class="elements">
+          <h1>Html Images</h1>
+          <p>
+            Images are required to improve the overall appearance of the
+            webpage. To add an image, you need to use the &lt;img&gt; tag.
+            Adding an image can include an HTML attribute known as the src
+            attribute. The src attribute refers to the source of the specified
+            image and is usually a URL; however, it can also be a location on
+            your local device. Additionally, there is an alt attribute which
+            specifies the alternative text displayed if the image cannot be
+            loaded, typically due to a slow internet connection. This text
+            describes the picture.
+          </p>
+
+          <p>Here is an example of how you can add an image:</p>
+
+          <p>
+            &lt;img
+            src="https://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
+            alt="beautiful birds"&gt;
+          </p>
+
+          <p>
+            This first image would display the image found on a specific
+            webpage. Alternatively, you can use an image from your own device:
+          </p>
+
+          <p>
+            &lt;img src="pictures/Mcdonalds.jpg" alt="fast food restaurant"&gt;
+          </p>
+
+          <p>
+            Note: It is not necessary to use the alt attribute when adding an
+            image to a webpage, but it can significantly improve the SEO of your
+            webpage.
+          </p>
+        </div>
+        <div class="elements">
+          <h1>Html Links</h1>
+
+          <p>
+            Links are important to redirect users to another page if necessary.
+            HTML links are hyperlinks. The &lt;a&gt; tag is used to define an
+            HTML link.
+          </p>
+
+          <p>
+            Similarly to the &lt;img&gt; tag, it uses an attribute known as the
+            href attribute. This specifies the destination address of the link.
+          </p>
+
+          <p>Example:</p>
+
+          <p>
+            &lt;p&gt; This is &lt;a href="https://visbug.com/"&gt; my website.
+            &lt;/a&gt; &lt;/p&gt;
+          </p>
+
+          <p>
+            In this example, if the user clicks on the words “my website”, they
+            will be redirected to
+            <a href="https://visbug.com/">https://visbug.com/</a>.
+          </p>
+
+          <p>
+            Note: A link does not necessarily have to be text; it can be an
+            image as well.
+          </p>
+        </div>
+        <div class="elements">
+          <h1>Html Tables</h1>
+          <p>
+            The &lt;table& tag is used to define an HTML table. Thereafter, each
+            specific table row can be defined using the &lt;tr&gt; tag, while a
+            table header is defined using the &lt;th&gt; tag. Each table cell is
+            defined using the &lt;td&gt; tag.
+          </p>
+
+          <p>Here’s an example of a table:</p>
+
+          <p>&lt;table&gt;</p>
+          <p>
+            &lt;tr&gt; <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;First Name&lt;/th&gt; <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Last Name&lt;/th&gt; <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Age&lt;/th&gt; <br />
+            &lt;/tr&gt;
+          </p>
+
+          <p>
+            &lt;tr&gt; <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;John&lt;/td&gt; <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Billings&lt;/td&gt; <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;26&lt;/td&gt; <br />
+            &lt;/tr&gt;
+          </p>
+
+          <p>
+            &lt;tr&gt; <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Thomas&lt;/td&gt; <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Frank&lt;/td&gt; <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;34&lt;/td&gt; <br />
+            &lt;/tr&gt;
+          </p>
+          <p>&lt;/table&gt;</p>
+
+          <p>Here’s an overview of how the table would look:</p>
+          <table class="boxed-table">
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Age</th>
+            </tr>
+
+            <tr>
+              <td>John</td>
+              <td>Billings</td>
+              <td>26</td>
+            </tr>
+
+            <tr>
+              <td>Thomas</td>
+              <td>Frank</td>
+              <td>34</td>
+            </tr>
+
+            <tr></tr>
+          </table>
+        </div>
+        <div class="elements">
+          <h1>Html Iframes</h1>
+          <p>
+            Iframes are used to display the content of a webpage onto another
+            webpage. The &lt;iframe&gt; tag is used to do this. Just like with
+            images, there is the src attribute in which you refer to the webpage
+            you want to display content from. You can also set the width and
+            height of the iframe using the height and width attributes.
+          </p>
+
+          <p>Example:</p>
+
+          <p>
+            &lt;iframe src="helloworld.html" height="250" width="350"&gt;
+            &lt;/iframe&gt;
+          </p>
+
+          <p>
+            Note: The source can either be an HTML file from your local computer
+            or the URL of any webpage online.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="replay" id="replyUs">
+      <div class="replySection">
+        <h3>Leave a Reply</h3>
+        <p>
+          Your email address will not be published. Required fields are marked *
+        </p>
+        <form id="commentForm" action="">
+          <div class="item">
+            <label for="comment">Comment</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Type your message..."
+              required
+            ></textarea>
+          </div>
+          <div class="item">
+            <label for="name">Name <span>*</span></label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="eg. James"
+              required
+            />
+            <div class="error-message" id="nameError">
+              Please enter your name.
+            </div>
+          </div>
+          <div class="item">
+            <label for="email">Email <span>*</span></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@gmail.com"
+              required
+            />
+            <div class="error-message" id="emailError">
+              Please enter a valid email address.
+            </div>
+          </div>
+          <div class="item">
+            <label for="website">Website</label>
+            <input
+              type="url"
+              name="website"
+              id="website"
+              placeholder="https://www.example.com"
+            />
+            <div class="error-message" id="websiteError">
+              Please enter a valid website URL.
+            </div>
+          </div>
+          <button type="submit">Post Comment</button>
+        </form>
+      </div>
+    </section>
+    <section class="messageUs">
+      <div class="mainMessageUsSection">
+        <div class="text">
+          <h1>Let’s work together</h1>
+          <p>
+            Get in touch with us and send some basic info about your project.
+          </p>
+        </div>
+        <button><a href="/contact-us.html">Message us</a></button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="firstSection">
+        <div class="itemOne"></div>
+        <div class="itemTwo">
+          <img src="#" alt="logo" />
+          <h3>Newsletter</h3>
+          <p>Stay up to date by subscribing to our newsletter.</p>
+          <form action="">
+            <input type="email" placeholder="example@gmail.com" />
+            <button><i class="fa-regular fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="secondSection">
+        <p>Copyright &copy; 2024 · Visbug</p>
+        <a href="#headBlog"><button><i class="fa-solid fa-angle-up"></i></button></a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
